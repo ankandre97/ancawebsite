@@ -1,0 +1,89 @@
+body{
+  background-color: #8FBC8F;
+  padding: 50px 70px 50px 70px;
+}
+h3{
+  background-color: midnightblue;
+  font-family: monospace;
+  color: red;
+}
+p{
+color: black;
+font-family: cursive;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+body{
+  background-color: #F0FFFF;
+}
+h3{
+  background-color: darkgreen;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: mediumslateblue;
+}
+p{
+color: yellowgreen;
+font-weight: bold;
+font-family: fantasy;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+body{
+  background-color: aqua;
+}
+h3{
+  background-color: darkorchid;
+  font-family: monospace;
+  color: hotpink;
+}
+
+
+}
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  body{
+    background-color: silver;
+  }
+  h3{
+    background-color: cornflowerblue;
+    font-family: monospace;
+    color: darkred;
+}
+}
+
+.web{
+  height: auto;
+  width: 60%;
+}
+
+.mainimg{
+  height:auto;
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button{
+background-color: darkslateblue;
+color:black;
+padding:10px;
+margin-left: auto;
+margin-bottom: 200px;
+
+}
+footer{
+  background-color:  cornflowerblue;
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+}

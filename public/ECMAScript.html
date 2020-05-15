@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Coffee Application" />
+        <title>ECMAScript</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+
+    </head>
+    <body>
+      <header>
+          <h1>Coffee Application for ordering and pricing</h1>
+          <img src="images/coffee.gif" alt="Coffee Image" class="coffee">
+      </header>
+        <!-- form -->
+        <form id="frm" method="get" target="_self">
+            <fieldset>
+                <legend>Drinks:</legend>
+                <label for="drinks">Choose a drink:</label>
+                <select id="drinks" name="drink">
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="flatwhite">Flat White</option>
+                <option value="espresso">Espresso</option>
+                <option value="americano">Americano</option>
+                </select>
+           </fieldset>
+
+              <fieldset>
+                <legend>Size of the coffee:</legend>
+                <label for="size">Choose the size:</label>
+                <select id="size" name="sizes">
+                  <option value="small">Small</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </fieldset>
+
+            <fieldset>
+            <legend> Choose your milk:</legend>
+            <select id="milk" name="milk">
+                <option value="Whole">Whole</option>
+                <option value="Semi-Skimmed" selected>Semi-Skimmed</option>
+                <option value="Skimmed">Skimmed</option>
+                <option value="Coconut">Coconut</option>
+                <option value="Soya">Soya</option>
+            </select></fieldset>
+
+            <fieldset>
+                <legend>Extras:</legend>
+                <p>
+                <input type="checkbox" id="sugar" name="extras" value="0" />
+                <label for="sugar">Sugar</label></p>
+                <p>
+                <input type="checkbox" id="cream" name="extras" value="0.50" />
+                <label for="cream">Cream</label></p>
+                <p>
+                  <input type="number" id="shoots" name="shoots" min="1" max="5" value="0.25" />
+                <label for="shoots">Syrup</label>
+            </fieldset>
+
+            <fieldset>
+              <button type="button" id="add">Add to order</button>
+              <button type="button" onclick="myFunction()" value="submit" id="submit">Place order</button></fieldset>
+        </form>
+        <p id="output"></p>
+
+<hr>
+<footer>
+  <address>
+  Created by &copy;Anca-Andreea Catrina.<br>
+  Follow me on: <a href="https://www.instagram.com/">Instagram</a><br>
+  Home Address: Ashford Street, Stoke-On-Trent<br>
+  England
+Contact information: <a href="mailto:anka.andreea97@gmail.com">anka.andreea97@gmail.com</a>
+</address>
+</footer>
+
+<script src="scripts/ECMAScript.js"></script>
+    </body>
+</html>
